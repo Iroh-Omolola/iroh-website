@@ -1,3 +1,5 @@
+export const CLARITY_URL = 'https://selar.com/jg7lp4w544'
+
 export const EMAIL = 'techwithiroh@gmail.com'
 
 export const SERVICES = [

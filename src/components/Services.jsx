@@ -1,4 +1,5 @@
 import SectionHead from './SectionHead.jsx'
+import { CLARITY_URL } from '../data.js'
 
 const SVCS = [
   { title: 'Frontend Engineering', text: 'Fast, accessible, meticulously crafted interfaces for products, platforms and brands.', svc: 'Frontend development project', cta: 'Start a project' },
@@ -29,7 +30,7 @@ export default function Services({ onBook }) {
             <h3>The Tech Clarity Session</h3>
             <p>Frontend, backend, data, product, design, cloud or security? Together we map your strengths, interests and goals into one clear direction, with a plan for your first ninety days.</p>
           </div>
-          <button className="btn" onClick={() => onBook('Tech Clarity Session')}>Reserve your session</button>
+          <a className="btn" href={CLARITY_URL} target="_blank" rel="noopener">Reserve your session</a>
         </div>
       </div>
     </section>

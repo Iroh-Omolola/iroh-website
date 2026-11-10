@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import SectionHead from './SectionHead.jsx'
-import { QUESTIONS, pickPath } from '../data.js'
+import { QUESTIONS, pickPath, CLARITY_URL } from '../data.js'
 
-export default function Clarity({ onBook }) {
+export default function Clarity() {
   const [answers, setAnswers] = useState({})
   const path = pickPath(answers)
 
@@ -41,13 +41,7 @@ export default function Clarity({ onBook }) {
                 <h3>{path.name}</h3>
                 <p>{path.why}</p>
                 <ul>{path.start.map(t => <li key={t}>{t}</li>)}</ul>
-                <button
-                  className="btn"
-                  type="button"
-                  onClick={() => onBook('Tech Clarity Session', `The quiz suggested ${path.name}. I’d like help confirming my path and making a plan.`)}
-                >
-                  Reserve a clarity session
-                </button>
+                <a className="btn" href={CLARITY_URL} target="_blank" rel="noopener">Reserve a clarity session</a>
               </>
             ) : (
               <>

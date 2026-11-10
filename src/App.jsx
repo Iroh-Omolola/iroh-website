@@ -29,7 +29,7 @@ export default function App() {
         <Hero />
         <Creds />
         <Services onBook={goBook} />
-        <Clarity onBook={goBook} />
+        <Clarity />
         <Products onBook={goBook} />
         <About />
         <Stage />
